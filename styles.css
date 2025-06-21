@@ -1,0 +1,208 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global */
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+  padding-bottom: 4rem;
+}
+
+a {
+  color: #1e90ff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: #007acc;
+  text-decoration: underline;
+}
+
+/* Layout */
+header, section, footer {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+/* Hero / Header */
+header {
+  text-align: center;
+  padding: 5rem 1rem 3rem;
+}
+header h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+header p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+header .cta {
+  margin-top: 2rem;
+}
+header .cta a {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #1e90ff;
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  transition: background 0.3s ease;
+}
+header .cta a:hover {
+  background: #007acc;
+}
+
+/* Highlight Badge */
+.highlight {
+  display: inline-block;
+  margin: 0.2em;
+  padding: 0.3em 0.6em;
+  background-color: #1e90ff;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* About Me */
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+#about .text {
+  flex: 1;
+}
+#about p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Section Headings */
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1e1e1e;
+  font-weight: 600;
+}
+section p, section ul {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+ul {
+  padding-left: 1.2rem;
+}
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Cards (Services, Projects, etc.) */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.card h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  color: #1e1e1e;
+}
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+.card a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+form label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #444;
+  text-align: left;
+  width: 100%;
+}
+#contact p, h2 {
+  text-align: center;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+form textarea {
+  text-align: center;
+  resize: vertical;
+  height: 150px;
+}
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 1rem;
+}
+button:hover {
+  background-color: #007acc;
+}
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #ddd;
+  padding: 2rem 1rem 0;
+}
+footer a {
+  color: #1e90ff;
+  margin: 0 0.5rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+#about {
+    flex-direction: row;
+    text-align: center;
+}
